@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Media Campaign Quiz</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quiz-container {
+        background: #ffffff;
+        width: 90%;
+        max-width: 900px;
+        margin: 40px 0;
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        text-align: center;
+        color: #4b2c82;
+        margin-bottom: 25px;
+    }
+
+    .question {
+        margin-bottom: 25px;
+        padding: 15px;
+        border-radius: 10px;
+        background: #f3f4f9;
+        transition: 0.3s ease;
+    }
+
+    .question:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .question h3 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .options label {
+        display: block;
+        padding: 8px 10px;
+        margin-bottom: 6px;
+        background: #ffffff;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid #ddd;
+    }
+
+    .options label:hover {
+        background: #e0e7ff;
+        border-color: #667eea;
+    }
+
+    input[type="radio"] {
+        margin-right: 8px;
+    }
+
+    .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        background: #667eea;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #5a67d8;
+    }
+
+    @media (max-width: 600px) {
+        .quiz-container {
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="quiz-container">
+    <h1>Cross-Media Campaign Quiz</h1>
+
+    <form>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. What is a cross-media campaign?</h3>
+            <div class="options">
+                <label><input type="radio" name="q1"> A campaign using only one platform</label>
+                <label><input type="radio" name="q1"> A campaign using multiple media platforms</label>
+                <label><input type="radio" name="q1"> A campaign using print only</label>
+                <label><input type="radio" name="q1"> A campaign without a target audience</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h3>2. Which of the following is NOT a media platform?</h3>
+            <div class="options">
+                <label><input type="radio" name="q2"> Social Media</label>
+                <label><input type="radio" name="q2"> Television</label>
+                <label><input type="radio" name="q2"> Radio</label>
+                <label><input type="radio" name="q2"> Calculator</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. What is the main goal of a cross-media campaign?</h3>
+            <div class="options">
+                <label><input type="radio" name="q3"> Reduce brand visibility</label>
+                <label><input type="radio" name="q3"> Reach a wider audience</label>
+                <label><input type="radio" name="q3"> Avoid customer interaction</label>
+                <label><input type="radio" name="q3"> Increase printing costs</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. Which tool is commonly used for digital campaign tracking?</h3>
+            <div class="options">
+                <label><input type="radio" name="q4"> Google Analytics</label>
+                <label><input type="radio" name="q4"> Paint</label>
+                <label><input type="radio" name="q4"> Calculator</label>
+                <label><input type="radio" name="q4"> MS Word</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. What does ROI stand for?</h3>
+            <div class="options">
+                <label><input type="radio" name="q5"> Return on Investment</label>
+                <label><input type="radio" name="q5"> Rate of Internet</label>
+                <label><input type="radio" name="q5"> Reach of Influence</label>
+                <label><input type="radio" name="q5"> Report of Income</label>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. Which strategy ensures consistent brand messaging?</h3>
+            <div class="options">
+                <label><input type="radio" name="q6"> Integrated marketing</label>
+                <label><input type="radio" name="q6"> Random posting</label>
+                <label><input type="radio" name="q6"> Ignoring feedback</label>
+                <label><input type="radio" name="q6"> Single channel use</label>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. What is audience segmentation?</h3>
+            <div class="options">
+                <label><input type="radio" name="q7"> Dividing audience into groups</label>
+                <label><input type="radio" name="q7"> Ignoring customers</label>
+                <label><input type="radio" name="q7"> Reducing budget</label>
+                <label><input type="radio" name="q7"> Using only billboards</label>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Which platform is best for video marketing?</h3>
+            <div class="options">
+                <label><input type="radio" name="q8"> YouTube</label>
+                <label><input type="radio" name="q8"> Newspaper</label>
+                <label><input type="radio" name="q8"> Fax</label>
+                <label><input type="radio" name="q8"> Telegram (paper)</label>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. What is a CTA in marketing?</h3>
+            <div class="options">
+                <label><input type="radio" name="q9"> Call To Action</label>
+                <label><input type="radio" name="q9"> Campaign Target Area</label>
+                <label><input type="radio" name="q9"> Customer Traffic Alert</label>
+                <label><input type="radio" name="q9"> Creative Text Analysis</label>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Which metric measures online engagement?</h3>
+            <div class="options">
+                <label><input type="radio" name="q10"> Likes and Shares</label>
+                <label><input type="radio" name="q10"> Paper Quality</label>
+                <label><input type="radio" name="q10"> Ink Usage</label>
+                <label><input type="radio" name="q10"> Office Rent</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+
+    </form>
+</div>
+
+</body>
+</html>
